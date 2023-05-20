@@ -1,6 +1,6 @@
 export default interface Meeting {
-  title: string;
-  picture: number;
+  picture: number
+  name: string;
   location: string;
   time: string;
   description: string;

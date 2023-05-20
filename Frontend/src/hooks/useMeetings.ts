@@ -14,8 +14,8 @@ const useMeetings = () => {
     queryFn: () =>
       apiClient.getAll({
         params: {
-          pictures: meetingQuery.picture,
-          names: meetingQuery.name,
+          picture: meetingQuery.picture,
+          name: meetingQuery.name,
           location: meetingQuery.location,
           time: meetingQuery.time,
           description: meetingQuery.description,
