@@ -1,6 +1,6 @@
 import { CgProfile } from "react-icons/cg";
-import { IoSettingsOutline } from "react-icons/io5";
-import { FaUserFriends } from "react-icons/fa";
+import { BiHome } from "react-icons/bi";
+import { AiOutlineHeart } from "react-icons/ai";
 import { BsFillChatFill } from "react-icons/bs";
 import { FaSignOutAlt } from "react-icons/fa";
 import { BsCalendarWeek } from "react-icons/bs";
@@ -9,24 +9,37 @@ const FooterNavigation = () => {
   return (
     <div className="navFooterContainer">
       <div className="navFooterIcons">
-        <a href="/profile">
-          <CgProfile />
+        <a href="/home">
+          <BiHome size={25} />
         </a>
-        <a href="/friends">
-          <FaUserFriends />
-        </a>
-        <a href="/chat">
-          <BsFillChatFill />
-        </a>
+        
         <a href="/calendar">
-          <BsCalendarWeek />
+          <BsCalendarWeek size={25} />
         </a>
-        <a href="/settings">
-          <IoSettingsOutline />
+        
+        <a href="/chat">
+          <BsFillChatFill size={25} />
         </a>
+        
+        <a href="/friends">
+          <AiOutlineHeart size={25} />
+        </a>
+        
+        <a href="/profile">
+          <CgProfile size={25} />
+        </a>
+        
         <a href="/">
-          <FaSignOutAlt />
+          <FaSignOutAlt size={25} />
         </a>
+      </div>
+      <div className="navFooterText">
+      <p className="home">Hem</p>
+      <p className="meeting">Träffar</p>
+      <p className="chatt">Chatt</p>
+      <p className="friends">Vänner</p>
+      <p className="profile">Profil</p>
+      <p className="signout">Logga Ut</p>
       </div>
     </div>
   );

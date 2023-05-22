@@ -1,65 +1,37 @@
 /* Colors */
 
 :root {
-  --color-green-dark: #476930;
-  --color-green-light: #86b049;
-  --color-beige: #c8b88a;
+  --color-blue: #002FD6;
+  --color-green: #05976B;
+  --color-orange: #E57E06;
   --color-text: #222222f8;
-  --color-accent: #f1dddf;
 }
 
 /* Login Pages */
 
-.colorSectionTop {
-  position: absolute;
-  width: 100vw;
-  height: 30vh;
-  margin-top: 0;
-  margin-left: 0;
+.logoSection {
+  margin-left: 2rem;
+  margin-top: 10rem;
 }
 
-.darkGreenBackgroundTop {
-  position: relative;
-  height: 40vh;
-  clip-path: polygon(
-    100% 0%,
-    100% 0%,
-    33% 0%,
-    0% 0%,
-    0% 45%,
-    5% 43%,
-    7% 42%,
-    9% 41%,
-    11% 40%,
-    15% 39%,
-    22% 37%,
-    30% 33%,
-    37% 31%,
-    50% 26%,
-    64% 22%,
-    76% 21%,
-    91% 20%,
-    100% 20%
-  );
-  margin-bottom: -9rem;
+.logoSection p {
+  display: inline;
+  font-size: 64px;
+  font-weight: 500;
 }
 
-.lightGreenBackgroundTop {
-  position: absolute;
-  margin-top: -9.5rem;
-  height: 34vh;
-  clip-path: polygon(
-    100% 0,
-    100% 33%,
-    76% 34%,
-    54% 38%,
-    36% 46%,
-    16% 57%,
-    0 68%,
-    0 0
-  );
-  z-index: -1;
+.do {
+  color: var(--color-blue);
 }
+
+.with {
+  color: var(--color-orange);
+}
+
+.me {
+  color: var(--color-green);
+}
+
 
 .titleHeader {
   margin-top: 12rem;
@@ -70,16 +42,11 @@
   margin-top: 15rem;
 }
 
-.titleHeader img {
-  width: 60%;
-  margin-left: 4.5rem;
-}
-
 .loginButton {
   display: block;
-  margin: 1rem auto;
+  margin: 2rem 0 1rem 3rem;
   text-align: center;
-  width: 40%;
+  width: 80%;
   height: 6vh;
   text-transform: capitalize;
   font-size: large;
@@ -87,17 +54,24 @@
   border-radius: 20px;
   line-height: 3rem;
   color: black;
+  border: 2px solid var(--color-blue);
+  border-radius: 5px;
+}
+
+.loginButton p {
+  font-size: 24px;
+  font-weight: 800;
 }
 
 .registerButton {
   display: block;
-  margin: 0 auto;
+  margin: 0 0 0 12rem;
   text-align: center;
   width: 40%;
   height: 6vh;
   text-transform: capitalize;
-  font-size: large;
-  color: var(--color-text);
+  font-size: 15px;
+  color: var(--color-blue);
 }
 
 .colorSectionBottom {
@@ -138,18 +112,53 @@
 
 /* Home Page Styles */
 
+.meetingHeading {
+  color: var(--color-orange);
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
 .navFooterIcons {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
-  color: black;
+  margin-left: 2rem;
+  color: gray;
+  width: 80vw;
 }
+  
 
 .navFooterIcons a {
-  color: var(--color-text);
+  color: #222222;
+  
 }
 
-.meetingHeading {
-  color: black;
+
+.navFooterText p{
+  display: inline;
+  font-size: 12px;
 }
+
+.home {
+  margin-left: 2rem;
+  margin-right: 1.75rem;
+}
+
+.meeting {
+  margin-right: 1.55rem;
+}
+
+.chatt {
+  margin-right: 1.65rem;
+}
+
+.friends {
+  margin-right: 1.6rem;
+}
+
+.profile {
+  margin-right: 1rem;
+}
+
+
