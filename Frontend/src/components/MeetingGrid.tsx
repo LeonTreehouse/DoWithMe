@@ -6,9 +6,14 @@ import useMeetings from "../hooks/useMeetings";
 
 const MeetingGrid = () => {
   const { data, error, isLoading } = useMeetings();
-  const skeletons = [1];
+  const skeletons = [1, 2, 3, 4];
 
   if (error) return <p>{error.message}</p>;
+  console.log(data?.results.map((meeting) => (
+    <MeetingCardContainer key={meeting.date}>
+      <MeetingCard meeting={meeting} />
+    </MeetingCardContainer>
+  )))
 
   return (
     <SimpleGrid spacing={6} padding="10px">
@@ -19,7 +24,7 @@ const MeetingGrid = () => {
           </MeetingCardContainer>
         ))}
       {data?.results.map((meeting) => (
-        <MeetingCardContainer key={meeting.location}>
+        <MeetingCardContainer key={meeting.date}>
           <MeetingCard meeting={meeting} />
         </MeetingCardContainer>
       ))}
@@ -28,3 +33,5 @@ const MeetingGrid = () => {
 };
 
 export default MeetingGrid;
+
+

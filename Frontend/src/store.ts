@@ -1,11 +1,12 @@
 import { create } from "zustand";
 
 interface MeetingQuery {
-  picture?: string;
   name?: string;
-  location?: string;
-  time?: string;
   description?: string;
+  picture?: number;
+  location?: string;
+  date?: string;
+  day?: string
   searchText?: string;
 }
 

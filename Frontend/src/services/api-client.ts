@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig } from "axios";
+import axios from "axios";
 
 export interface FetchResponse<T> {
   results: T[];
@@ -15,9 +15,9 @@ class APIClient<T> {
     this.endpoint = endpoint;
   }
 
-  getAll(config: AxiosRequestConfig) {
+  getAll() {
     return axiosInstance
-      .get<FetchResponse<T>>(this.endpoint, config)
+      .get<FetchResponse<T>>(this.endpoint)
       .then((res) => res.data);
   }
 

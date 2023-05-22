@@ -10,17 +10,9 @@ const useMeetings = () => {
   const meetingQuery = useMeetingQueryStore((s) => s.meetingQuery);
 
   return useQuery<FetchResponse<Meeting>, Error>({
-    queryKey: ["meetings", meetingQuery],
+    queryKey: ["meeting", meetingQuery],
     queryFn: () =>
-      apiClient.getAll({
-        params: {
-          picture: meetingQuery.picture,
-          name: meetingQuery.name,
-          location: meetingQuery.location,
-          time: meetingQuery.time,
-          description: meetingQuery.description,
-        },
-      }),
+      apiClient.getAll(),
     staleTime: ms("24h"),
   });
 };
