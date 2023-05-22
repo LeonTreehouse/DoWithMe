@@ -3,6 +3,6 @@ export default interface Meeting {
   description: string;
   picture: number
   location: string;
-  date: string;
+  time: string;
   day: string
 }

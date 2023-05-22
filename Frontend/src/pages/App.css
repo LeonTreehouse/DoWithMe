@@ -112,6 +112,11 @@
 
 /* Home Page Styles */
 
+.homePageGrid {
+  width: 100vw;
+  height: 100vh;
+}
+
 .meetingHeading {
   color: var(--color-orange);
   font-size: 30px;
@@ -127,7 +132,6 @@
   color: gray;
   width: 80vw;
 }
-  
 
 .navFooterIcons a {
   color: #222222;
@@ -159,6 +163,32 @@
 
 .profile {
   margin-right: 1rem;
+}
+
+.cardComponenet {
+  margin: 0.1rem;
+}
+
+.cardContainer {
+  border: 3px solid var(--color-green);
+  border-radius: 20px;
+  padding: 0;
+
+}
+
+.meetingCardText{
+  color: var(--color-orange);
+}
+
+.meetingCardTime {
+  color: var(--color-blue);
+}
+
+.createMeetingLink {
+  color: var(--color-green);
+  margin-left: 15rem;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 

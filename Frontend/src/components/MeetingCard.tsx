@@ -1,4 +1,4 @@
-import { Card, CardBody, HStack, Heading } from "@chakra-ui/react";
+import { Box, Card, CardBody, Heading, Text } from "@chakra-ui/react";
 import Meeting from "../entities/Meeting";
 
 
@@ -9,13 +9,14 @@ interface Props {
 
 const MeetingCard = ( { meeting }: Props) => {
   return (
-    <Card>
-      {/* <Image src={meeting.picture} /> */}
-      <CardBody>
-        <HStack justifyContent={"space-between"} marginBottom={3}></HStack>
-        <p>{meeting.name}</p>
-        <Heading fontSize="2xl"></Heading>
-      </CardBody>
+    <Card className="cardComponenet">
+        <Box className="cardContainer">
+          <CardBody>
+            <Heading fontSize="2xl" className="meetingCardHeading">{meeting.name}</Heading>
+            <Text className="meetingCardTime">{meeting.time}</Text>
+            <Text className="meetingCardText">{meeting.location}</Text>
+          </CardBody>
+        </Box>
     </Card>
   );
 };
