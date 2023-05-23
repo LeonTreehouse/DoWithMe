@@ -1,4 +1,4 @@
-import { Box, Card, CardBody, Heading, Text } from "@chakra-ui/react";
+import { Box, Card, CardBody, HStack, Heading, Text } from "@chakra-ui/react";
 import Meeting from "../entities/Meeting";
 
 
@@ -13,7 +13,10 @@ const MeetingCard = ( { meeting }: Props) => {
         <Box className="cardContainer">
           <CardBody>
             <Heading fontSize="2xl" className="meetingCardHeading">{meeting.name}</Heading>
-            <Text className="meetingCardTime">{meeting.time}</Text>
+            <HStack>
+              <Text className="meetingCardDay">{meeting.day}</Text>
+              <Text className="meetingCardTime">{meeting.time}</Text>
+            </HStack>
             <Text className="meetingCardText">{meeting.location}</Text>
           </CardBody>
         </Box>

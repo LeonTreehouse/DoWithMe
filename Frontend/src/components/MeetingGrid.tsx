@@ -9,11 +9,6 @@ const MeetingGrid = () => {
   const skeletons = [1, 2, 3, 4];
 
   if (error) return <p>{error.message}</p>;
-  console.log(data?.results.map((meeting) => (
-    <MeetingCardContainer key={meeting.time}>
-      <MeetingCard meeting={meeting} />
-    </MeetingCardContainer>
-  )))
 
   return (
     <SimpleGrid spacing={6} padding="10px">

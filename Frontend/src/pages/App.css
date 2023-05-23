@@ -169,7 +169,7 @@
 }
 
 .cardContainer {
-  border: 3px solid var(--color-green);
+  border: 3px solid var(--color-blue);
   border-radius: 20px;
   padding: 0;
 
@@ -177,6 +177,10 @@
 
 .meetingCardText{
   color: var(--color-orange);
+}
+
+.meetingCardDay{
+  color: var(--color-green);
 }
 
 .meetingCardTime {
@@ -233,6 +237,30 @@
   margin-left: 2.75rem;
 }
 
+.createMeetingTime{
+  margin-bottom: 1rem;
+  margin-left: 2.75rem;
+}
+
 .formButtons {
   margin: -11rem 0 0 11.5rem;
+  padding-top: 12rem;
+}
+
+/* New Created Cards */
+
+.createdMeetingGridItem {
+  margin-top: -2rem;
+}
+
+.createdMeetingCardDay {
+  color: var(--color-green);
+}
+
+.createdMeetingCardTime {
+  color: var(--color-blue);
+}
+
+.createdMeetingCardPlace {
+  color: var(--color-orange);
 }

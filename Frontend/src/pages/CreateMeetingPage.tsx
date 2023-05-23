@@ -1,4 +1,4 @@
-import { Button, Grid, GridItem, HStack } from "@chakra-ui/react";
+import {  Grid, GridItem } from "@chakra-ui/react";
 import FooterNavigation from "../components/FooterNavigation";
 
 
@@ -10,9 +10,9 @@ const HomePage: React.FC = () => {
     <Grid
   templateAreas={`"header"
                   "main"
-                  "buttons"
+
                   "footer"`}
-  gridTemplateRows={'300px 1fr 50px 50px'}
+  gridTemplateRows={'300px 1fr 50px'}
     className="createMeetingGrid"
 >
   <GridItem area={'header'} >
@@ -21,17 +21,6 @@ const HomePage: React.FC = () => {
 
   <GridItem area={"main"} >
     <CreateMeetingForm />
-  </GridItem>
-
-  <GridItem area={"buttons"} >
-    <HStack className="formButtons">
-  <Button colorScheme='red' variant='solid' size="md" type="reset">
-    Rensa
-  </Button>
-    <Button colorScheme="blue"size="md" variant={'outline'}>
-      Skapa
-    </Button>
-    </HStack>
   </GridItem>
 
   <GridItem area={'footer'}>
