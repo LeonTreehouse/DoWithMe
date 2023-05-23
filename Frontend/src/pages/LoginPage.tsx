@@ -12,19 +12,19 @@ const LoginPage: React.FC = () => {
 
   return (
     <>
-      <div className="logoSection">
-        <p className="do">Do</p>
-        <p className="with">With</p>
-        <p className="me">Me</p>
-      </div>
-      <div className="welcomeSection">
-        <Box className="loginButton" onClick={goToHomePage}>
-          <p>Logga In</p>
-        </Box>
-        <a className="registerButton" href="/login">
-          Skapa Konto
-        </a>
-      </div>
+        <div className="logoSection">
+          <p className="do">Do</p>
+          <p className="with">With</p>
+          <p className="me">Me</p>
+        </div>
+        <div className="welcomeSection">
+          <Box className="loginButton" onClick={goToHomePage}>
+            <p>Logga In</p>
+          </Box>
+          <a className="registerButton" href="/login">
+            Skapa Konto
+          </a>
+        </div>
     </>
   );
 };

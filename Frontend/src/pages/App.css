@@ -138,7 +138,6 @@
   
 }
 
-
 .navFooterText p{
   display: inline;
   font-size: 12px;
@@ -192,3 +191,48 @@
 }
 
 
+/* Create Meeting Page */
+
+.createMeetingGrid {
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.createMeetingHeading {
+  color: var(--color-green);
+  font-size: 42px;
+  font-weight: 400;
+  padding-left: 9rem;
+  padding-top: 4rem;
+}
+
+.clearFormButton {
+  margin-left: 17rem;
+  border: none;
+  background: none;
+
+}
+
+.createMeetingTitle {
+   margin-bottom: 1rem;
+   margin-left: 2.75rem;
+   border: none;
+}
+ .createMeetingPlace {
+  margin-bottom: 1rem;
+  margin-left: 2.75rem;
+ }
+
+ .createMeetingDay{
+  margin-bottom: 1rem;
+  margin-left: 2.75rem;
+ }
+
+.createMeetingDescription{
+  margin-left: 2.75rem;
+}
+
+.formButtons {
+  margin: -11rem 0 0 11.5rem;
+}
