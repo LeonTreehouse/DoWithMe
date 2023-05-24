@@ -10,7 +10,6 @@ const HomePage: React.FC = () => {
     <Grid
   templateAreas={`"header"
                   "main"
-
                   "footer"`}
   gridTemplateRows={'300px 1fr 50px'}
     className="createMeetingGrid"

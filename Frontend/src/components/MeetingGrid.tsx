@@ -6,7 +6,7 @@ import useMeetings from "../hooks/useMeetings";
 
 const MeetingGrid = () => {
   const { data, error, isLoading } = useMeetings();
-  const skeletons = [1, 2, 3, 4];
+  const skeletons = [1, 2];
 
   if (error) return <p>{error.message}</p>;
 

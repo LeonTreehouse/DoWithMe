@@ -264,3 +264,67 @@
 .createdMeetingCardPlace {
   color: var(--color-orange);
 }
+
+/* Profile Page */
+
+.profilePageGrid {
+  height: 100vh;
+  width: 100vw;
+}
+
+.profileHeading {
+  color: var(--color-orange);
+  font-size: 30px;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.profileCardContainer {
+  border: 3px solid var(--color-green);
+  border-radius: 20px;
+}
+
+.profileCardHeading{
+  color: var(--color-blue);
+  font-weight: 700;
+  font-size: 24;
+}
+
+.profileAvatar {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.profileAge{
+  margin-left: 5rem;
+  margin-top: -6.25rem;
+  color: var(--color-green);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.profileCity {
+  margin-left: 5rem;
+  color: var(--color-blue);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.profileIntrests {
+  margin-left: 5rem;
+  color: var(--color-orange);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.profileBodyContainer{
+  margin-top: 3rem;
+  margin-bottom: 15rem;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.profileSettingsButton {
+  margin-left: 13rem;
+}
