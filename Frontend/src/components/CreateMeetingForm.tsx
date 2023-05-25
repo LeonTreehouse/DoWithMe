@@ -1,10 +1,11 @@
 import { Button, FormControl, HStack, Input, Select, Spinner } from '@chakra-ui/react';
-import { useState, ChangeEvent, FormEvent } from 'react';
+import { useState, ChangeEvent, FormEvent, useRef } from 'react';
 import useMeetings from '../hooks/useMeetings';
 import { useNavigate } from 'react-router-dom';
 
 const CreateMeetingForm = () => {
   const navigate = useNavigate();
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [formData, setFormData] = useState({
     title: '',
     place: '',
@@ -34,6 +35,17 @@ const CreateMeetingForm = () => {
 
     navigate('/home', { state: { formData } });
   };
+
+    const handleReset = () => {
+      setFormData({
+        title: "",
+        place: "",
+        day: "",
+        description: "",
+        time: "",
+      });
+      formRef.current?.reset();
+    };
 
   const { isLoading } = useMeetings();
 
@@ -104,7 +116,13 @@ const CreateMeetingForm = () => {
           name="description"
         />
         <HStack className="formButtons">
-          <Button colorScheme="red" variant="solid" size="md" type="reset">
+          <Button
+            colorScheme="red"
+            variant="solid"
+            size="md"
+            type="reset"
+            onClick={handleReset}
+          >
             Rensa
           </Button>
           <Button

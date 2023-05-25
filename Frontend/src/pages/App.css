@@ -328,3 +328,27 @@
 .profileSettingsButton {
   margin-left: 13rem;
 }
+
+/* Calendar Page */
+
+.calendarHeading {
+  color: var(--color-orange);
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+/* Chat Page */
+
+.chatPageGrid {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Error Page */
+
+.constructionVideo {
+  margin-top: 29rem;
+  width: 390px;
+}

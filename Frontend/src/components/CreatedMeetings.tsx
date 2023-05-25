@@ -20,7 +20,9 @@ const CreatedMeetings = () => {
               <Text className="createdMeetingCardDay">{day}</Text>
               <Text className="createdMeetingCardTime">{time}</Text> 
             </HStack>
-            <Text className="createdMeetingCardPlace">{place}</Text>
+            <HStack>
+              <Text className="createdMeetingCardPlace">{place}</Text>
+            </HStack>
           </CardBody>
         </Box>
     </Card>

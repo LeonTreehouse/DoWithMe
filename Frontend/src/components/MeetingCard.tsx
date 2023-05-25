@@ -1,5 +1,6 @@
 import { Box, Card, CardBody, HStack, Heading, Text } from "@chakra-ui/react";
 import Meeting from "../entities/Meeting";
+import JoinMeetingButton from "./JoinMeetingButton";
 
 
 interface Props {
@@ -17,7 +18,8 @@ const MeetingCard = ( { meeting }: Props) => {
               <Text className="meetingCardDay">{meeting.day}</Text>
               <Text className="meetingCardTime">{meeting.time}</Text>
             </HStack>
-            <Text className="meetingCardText">{meeting.location}</Text>
+              <Text className="meetingCardText">{meeting.location}</Text>
+              <JoinMeetingButton />
           </CardBody>
         </Box>
     </Card>
